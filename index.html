@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flipbook</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://www.turnjs.com/lib/turn.min.js"></script>
+
+  <style>
+    body { background: #f0f0f0; display: flex; justify-content: center; padding: 40px; }
+    #flipbook { width: 800px; height: 500px; }
+    #flipbook img { width: 100%; height: 100%; object-fit: cover; }
+  </style>
+</head>
+
+<body>
+  <div id="flipbook">
+	<div><img src="RATARationale.jpg"></div>
+	<div><img src="RATARationale2.jpg"></div>
+	<div><img src="RATARationale3.jpg"></div>
+	<div><img src="RATARationale4.jpg"></div>
+	<div><img src="RATARationale5.jpg"></div>
+	<div><img src="RATARationale6.jpg"></div>
+	<div><img src="RATARationale7.jpg"></div>
+	<div><img src="RATARationale8.jpg"></div>
+	<div><img src="RATARationale9.jpg"></div>
+	<div><img src="RATARationale10.jpg"></div>
+	<div><img src="RATARationale11.jpg"></div>
+	<div><img src="RATARationale12.jpg"></div>
+	<div><img src="RATARationale13.jpg"></div>
+	<div><img src="RATARationale14.jpg"></div>
+	<div><img src="RATARationale15.jpg"></div>
+	<div><img src="RATARationale16.jpg"></div>
+	<div><img src="RATARationale17.jpg"></div>
+	<div><img src="RATARationale18.jpg"></div>
+	<div><img src="RATARationale19.jpg"></div>
+	<div><img src="RATARationale20.jpg"></div>
+	<div><img src="RATARationale21.jpg"></div>
+  </div>
+
+  <script>
+    $("#flipbook").turn({
+      width: 800,
+      height: 500,
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>

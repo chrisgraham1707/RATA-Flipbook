@@ -59,23 +59,20 @@
     <div><img src="RATARationale21.jpg"></div>
   </div>
 
-  <script>
-    $("#flipbook").turn({
-      width: $("#flipbook").width(),
-      height: $("#flipbook").height(),
-      autoCenter: true,
-      elevation: 50,
-      gradients: true
-    });
+ <script>
+  $("#flipbook").turn({
+    width: $("#flipbook").width(),
+    height: $("#flipbook").height(),
+    autoCenter: true,
+    elevation: 50,
+    gradients: true,
+    display: "single"   // ★ important: show one page at a time
+  });
 
-    // Resize when window changes
-    $(window).on("resize", function () {
-      $("#flipbook").turn("size",
-        $("#flipbook").width(),
-        $("#flipbook").height()
-      );
-    });
-  </script>
-
-</body>
-</html>
+  $(window).on("resize", function () {
+    $("#flipbook").turn("size",
+      $("#flipbook").width(),
+      $("#flipbook").height()
+    );
+  });
+</script>
